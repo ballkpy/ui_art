@@ -1,0 +1,90 @@
+section#howto {
+  padding-top: 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+.howto_container {
+  display: flex;
+  font-family: var(--font-th-pr);
+  color: var(--text-color-pr);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.howto_container .howto_text {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.howto_container .howto_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 5rem;
+  gap: 3.5rem;
+}
+
+.howto_container .howto_content .howto_content_item {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 1rem;
+}
+
+.howto_container .howto_content .howto_content_item:hover {
+  background-color: #363d44;
+  border-radius: 2rem;
+}
+
+.howto_container .howto_content .howto_content_item:hover h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #23282d;
+  border-radius: 100%;
+}
+
+.howto_container .howto_content .howto_content_item.active {
+  background-color: var(--bg-nav-mb);
+  border-radius: 2rem;
+}
+
+.howto_container .howto_content .howto_content_item .howto_content_head h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease-out;
+}
+
+.howto_container
+  .howto_content
+  .howto_content_item
+  .howto_content_head
+  h3.active {
+  background-color: var(--main-color-pr);
+  border-radius: 100%;
+}
+
+.howto_container .howto_content .howto_content_item .howto_content_info {
+  margin-left: 1.3rem;
+}
+
+.howto_container .howto_content .howto_content_item .howto_content_info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.9rem;
+}
+
+.howto_container .howto_content .howto_content_item .howto_content_info p {
+  color: var(--text-color-sc);
+  font-weight: 500;
+}

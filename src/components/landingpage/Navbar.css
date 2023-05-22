@@ -1,0 +1,205 @@
+.nav_main {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* transition: background-color 0.2s, transform 0.4s; */
+  width: 100%;
+  z-index: 998;
+  font-family: var(--font-eg-pr);
+  border-bottom: 0.5px solid rgb(51, 51, 51);
+  background-color: rgba(24, 24, 24, 0.764);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(30px);
+  z-index: 5;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.7rem 0;
+}
+.nav_main .nav_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_main .nav_logo h3 {
+  font-size: 1.5rem;
+  color: var(--text-color-pr);
+  font-weight: bold;
+  padding-left: 0.4rem;
+}
+
+.nav_main .nav_menu-list {
+  display: flex;
+  margin-left: 10rem;
+}
+
+.nav_main .nav_menu-list li {
+  margin: 0 1rem;
+}
+
+.nav_main .nav_menu-list li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color-sc);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease-in-out;
+}
+
+.nav_main .nav_menu-list li a:hover {
+  color: var(--text-color-pr);
+}
+
+.nav_main .nav_button a:nth-child(1) {
+  border-radius: 4rem;
+  border: 2px solid var(--main-color-pr);
+  padding: 0.7rem 2.4rem;
+  letter-spacing: 0.5px;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color-pr);
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.nav_main .nav_button a:nth-child(1):hover {
+  background-color: var(--main-color-pr);
+  box-shadow: 0px 0px 20px var(--main-color-pr);
+}
+
+.nav_main .nav_button a:nth-child(2) {
+  border-radius: 4rem;
+  padding: 0.7rem 2.4rem;
+  letter-spacing: 0.5px;
+  margin-left: 0.4rem;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color-pr);
+  background-color: var(--main-color-pr);
+  border: 2px solid var(--main-color-pr);
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.nav_main .nav_button a:nth-child(2):hover {
+  box-shadow: 0px 0px 20px var(--main-color-pr);
+}
+
+.nav_main .hamburger_menu {
+  display: none;
+  font-size: 1.7rem;
+  color: var(--text-color-pr);
+  cursor: pointer;
+}
+
+.menu_mobile {
+  width: 1px;
+  padding: 0 1.4rem;
+  background-color: var(--bg-nav-mb);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: -1;
+  font-family: var(--font-eg-pr);
+  text-align: center;
+  /* display: none; */
+  transform: translateX(10rem);
+  opacity: 0;
+  transition: all 0.75s ease-in-out;
+}
+.menu_mobile .close_menu {
+  position: absolute;
+  font-size: 2rem;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: var(--text-color-pr);
+}
+
+.menu_mobile .mobile_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.menu_mobile .mobile_container .mobile_menu-list li {
+  margin: 2rem 0;
+}
+
+.menu_mobile .mobile_container .mobile_menu-list li a {
+  text-decoration: none;
+  color: var(--text-color-sc);
+  cursor: pointer;
+}
+
+.menu_mobile .mobile_button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.menu_mobile .mobile_button a:nth-child(1) {
+  border-radius: 4rem;
+  border: 2px solid var(--main-color-pr);
+  padding: 0.7rem 2.4rem;
+  letter-spacing: 0.5px;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color-pr);
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.menu_mobile .mobile_button a:nth-child(2) {
+  margin-top: 0.5rem;
+  border-radius: 4rem;
+  padding: 0.7rem 2.6rem;
+  letter-spacing: 0.5px;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color-pr);
+  background-color: var(--main-color-pr);
+  border: 2px solid var(--main-color-pr);
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+  .menu_mobile.active {
+    /* display: block; */
+    width: 300px;
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .container {
+    margin: 0 2rem;
+    width: auto;
+  }
+
+  .nav_main .hamburger_menu {
+    display: block;
+    font-size: 1.7rem;
+    color: var(--text-color-pr);
+    cursor: pointer;
+  }
+
+  .nav_main .nav_menu-list {
+    display: none;
+  }
+
+  .nav_main .nav_button {
+    display: none;
+  }
+}
