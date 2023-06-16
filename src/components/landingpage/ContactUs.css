@@ -96,3 +96,29 @@
 .form_container .form_form .form_btn:hover {
   box-shadow: 0px 0px 20px var(--main-color-pr);
 }
+
+@media screen and (max-width: 991px) {
+  .contactus .form_container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form_container .form_form .form_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form_container .form_form .form_grid .form_item:nth-child(3) {
+    grid-column: 1/2;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .form_container .form_form .form_btn {
+    width: 100%;
+  }
+
+  .contactus .form_container .form_form .form_text {
+    font-size: 1.6rem;
+  }
+}

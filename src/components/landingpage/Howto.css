@@ -88,3 +88,57 @@ img {
   color: var(--text-color-sc);
   font-weight: 500;
 }
+
+@media screen and (max-width: 991px) {
+  .howto_container .howto_content {
+    padding: 0 2rem;
+  }
+
+  .howto_container .howto_content .howto_content_item .howto_content_head h3 {
+    font-size: 1.4rem;
+  }
+
+  .howto_container .howto_content .howto_content_item .howto_content_info h2 {
+    font-size: 1.2rem;
+  }
+
+  .howto_container .howto_content .howto_content_item .howto_content_info p {
+    font-size: 0.8rem;
+  }
+
+  .howto_container .howto_content .howto_content_item {
+    padding: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .howto_container .howto_content {
+    grid-template-columns: 1fr;
+  }
+
+  .howto_container .howto_content {
+    margin-top: 1.4rem;
+  }
+  .howto_container .howto_content .howto_content_item {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .howto_container .howto_content .howto_content_item .howto_content_head h3 {
+    font-size: 1.7rem;
+  }
+
+  .howto_container .howto_content .howto_content_item .howto_content_info h2 {
+    font-size: 1.4rem;
+  }
+
+  .howto_container .howto_content .howto_content_item .howto_content_info p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .howto_container .howto_text {
+    font-size: 1.6rem;
+  }
+}

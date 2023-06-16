@@ -87,24 +87,48 @@ const navbar = () => {
         <div className='mobile_container'>
           <ul className='mobile_menu-list'>
             <li>
-              <a href='#About us' onClick={() => setToggleMenu(false)}>
+              <Link
+                to='aboutUs'
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={300}
+              >
                 About us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#Showcase' onClick={() => setToggleMenu(false)}>
+              <Link
+                to='showCase'
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={300}
+              >
                 Showcase
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#How to use' onClick={() => setToggleMenu(false)}>
+              <Link
+                to='howto'
+                spy={true}
+                smooth={true}
+                offset={-110}
+                duration={300}
+              >
                 How to use
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#Contact' onClick={() => setToggleMenu(false)}>
+              <Link
+                to='contact'
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={300}
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 

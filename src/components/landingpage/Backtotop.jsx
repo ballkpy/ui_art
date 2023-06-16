@@ -1,6 +1,6 @@
 import React from 'react';
 import './Backtotop.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,9 +9,9 @@ const Backtotop = () => {
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
+    if (scrolled > 400) {
       setShowbacktotop(true);
-    } else if (scrolled <= 300) {
+    } else {
       setShowbacktotop(false);
     }
   };

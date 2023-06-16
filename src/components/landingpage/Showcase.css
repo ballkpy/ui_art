@@ -89,3 +89,15 @@
 .showCase_container .showcase_btn.hide {
   display: none;
 }
+
+@media screen and (max-width: 991px) {
+  .showCase_container .showcase_grid {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .showCase_container .showcase_text {
+    font-size: 1.6rem;
+  }
+}

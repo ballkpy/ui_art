@@ -74,6 +74,10 @@ section.aboutus {
     font-size: 1.6rem;
   }
 
+  .about_container .about_grid {
+    margin-top: 3rem;
+  }
+
   .about_container .about_grid .about_item .about_icon {
     font-size: 4.5rem;
   }
